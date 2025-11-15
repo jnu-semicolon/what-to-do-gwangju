@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet, SafeAreaView } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Header from './components/Header'; // 헤더
 import Profile from './components/Profile'; // 프로필
 import SearchBar from './components/SearchBar'; // 검색창
