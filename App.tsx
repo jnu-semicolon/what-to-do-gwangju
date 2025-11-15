@@ -1,16 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import { StatusBar, StyleSheet, useColorScheme, View, SafeAreaView } from 'react-native';
 import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import HomeScreen from './src/pages/HomePage/HomeScreen';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -34,7 +28,13 @@ function AppContent() {
       />
     </View>
   );
-}
+
+  return(
+    <SafeAreaView style={styles.container}>
+      <HomeScreen />
+    </SafeAreaView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
