@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 
 const eventData = [
-  { id: '1', title: '국립아시아문화전당', image: require('../../assets/event_card1.png') },
-  { id: '2', title: '다른 이벤트', image: require('../../assets/event_card2.png') }, // 예시 이미지 추가
-  { id: '3', title: '세 번째 이벤트', image: require('../../assets/event_card3.png') }, // 예시 이미지 추가
+  { id: '1', title: '국립아시아문화전당', image: require('../../assets/eventlist/event_card.png') },
+  { id: '2', title: '다른 이벤트', image: require('../../assets/eventlist/event_card.png') }, // 예시 이미지 추가
+  { id: '3', title: '세 번째 이벤트', image: require('../../assets/eventlist/event_card.png') }, // 예시 이미지 추가
 ];
 
 const EventList = () => {

@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 
 const categoryData = [
-  { id: '1', name: '공연', icon: require('../../assets/icon_category_performance.png') },
-  { id: '2', name: '밥집', icon: require('../../assets/icon_category_food.png') },
-  { id: '3', name: '카페', icon: require('../../assets/icon_category_cafe.png') },
-  { id: '4', name: '전시', icon: require('../../assets/icon_category_exhibition.png') },
-  { id: '5', name: '기타', icon: require('../../assets/icon_category_etc.png') }, // 예시 추가
+  { id: '1', name: '공연', icon: require('../../assets/category/icon_category_performance.png') },
+  { id: '2', name: '밥집', icon: require('../../assets/category/icon_category_food.png') },
+  { id: '3', name: '카페', icon: require('../../assets/category/icon_category_cafe.png') },
+  { id: '4', name: '전시', icon: require('../../assets/category/icon_category_exhibition.png') },
+  { id: '5', name: '기타', icon: require('../../assets/category/icon_category_etc.png') }, // 추가 카테고리
 ];
 
 const Categories = () => {

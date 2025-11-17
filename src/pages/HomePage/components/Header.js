@@ -1,38 +1,32 @@
 import React from 'react';
-import { View, Image, TouchableOpacity, StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
+import { View, Image, TouchableOpacity, StyleSheet, Platform, StatusBar } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Header = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
+
         {/* 로고와 지도 아이콘을 묶는 '왼쪽 컨테이너' */}
         <View style={styles.leftContainer}>
           {/* JOABRO 로고 */}
           <Image
-            source={require('../../assets/joabro_logo.png')} // assets 경로에 맞게 수정
+            source={require('../../assets/joabro_logo.png')}
             style={styles.logo}
           />
-
-          {/* 지도 아이콘 버튼 */}
-          <TouchableOpacity style={styles.mapButton}>
-            <Image
-              source={require('../../assets/map_icon.png')}  // assets 경로에 맞게 수정
-              style={styles.mapIcon}
-            />
-          </TouchableOpacity>
-        </View>
+          </View>
 
         {/* 알림 아이콘 */}
         <TouchableOpacity style={styles.bellButton}>
           <Image
-            source={require('../../assets/bell_icon.png')} // assets 경로에 맞게 수정
+            source={require('../../assets/header/icon_bell.png')} // assets 경로에 맞게 수정
             style={styles.bellIcon}
           />
 
           {/* 알림이 있을 때 이 View를 표시합니다. */}
           <View style={styles.notificationDot} />
-
         </TouchableOpacity>
+
       </View>
     </SafeAreaView>
   );
@@ -59,32 +53,20 @@ const styles = StyleSheet.create({
   },
   // JOABRO 로고 이미지
   logo: {
-    width: 166,
-    height: 31,
-    flexShrink: 0,
-    resizeMode: 'contain',
-  },
-  // 지도 버튼 영역
-  mapButton: {
-    marginLeft: 8,
-    padding: 8,
-  },
-  // 지도 아이콘 이미지
-  mapIcon: {
-    width: 66,
-    height: 59,
+    width: 100,
+    height: 50,
     flexShrink: 0,
     resizeMode: 'contain',
   },
   // 알림 버튼 영역
   bellButton: {
     padding: 8,
+    position: 'relative',
   },
   // 알림 아이콘 이미지
   bellIcon: {
-    width: 37,
-    height: 37,
-    flexShrink: 0,
+    width: 24,
+    height: 24,
     resizeMode: 'contain'
   },
   // 알림 도트 (알림이 있을 때 표시)

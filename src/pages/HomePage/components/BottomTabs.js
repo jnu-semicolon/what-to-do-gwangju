@@ -5,19 +5,19 @@ const BottomTabs = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.tabItem}>
-        <Image source={require('../../assets/icon_tab_route.png')} style={styles.tabIcon} />
+        <Image source={require('../../assets/BottomTabs/icon_tab_route.png')} style={styles.tabIcon} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.tabItem}>
-        <Image source={require('../../assets/icon_tab_map.png')} style={styles.tabIcon} />
+        <Image source={require('../../assets/BottomTabs/icon_tab_map.png')} style={styles.tabIcon} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.tabItem}>
-        <Image source={require('../../assets/icon_tab_home.png')} style={styles.tabIcon} />
+        <Image source={require('../../assets/BottomTabs/icon_tab_home.png')} style={styles.tabIcon} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.tabItem}>
-        <Image source={require('../../assets/icon_tab_favorites.png')} style={styles.tabIcon} />
+        <Image source={require('../../assets/BottomTabs/icon_tab_favorites.png')} style={styles.tabIcon} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.tabItem}>
-        <Image source={require('../../assets/icon_tab_settings.png')} style={styles.tabIcon} />
+        <Image source={require('../../assets/BottomTabs/icon_tab_settings.png')} style={styles.tabIcon} />
       </TouchableOpacity>
     </View>
   );
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center', 
     paddingVertical: 8, 
   },
+  
   // 하단메뉴 아이콘
   tabIcon: {
     display: 'flex',

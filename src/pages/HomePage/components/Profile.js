@@ -14,7 +14,7 @@ const Profile = () => {
         <Text style={styles.nickname}>닉네임입니다닉넴</Text>
         <View style={styles.locationRow}>
           <Image
-            source={require('../../assets/icon_pin.png')} // assets 경로에 맞게 수정
+            source={require('../../assets/profile/icon_pin.png')} // assets 경로에 맞게 수정
             style={styles.pinIcon}
           />
           <Text style={styles.locationText}>북구 용봉동</Text>
