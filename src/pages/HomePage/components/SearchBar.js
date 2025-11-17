@@ -7,7 +7,7 @@ const SearchBar = () => {
       {/* 검색창 본체 */}
       <View style={styles.searchInputWrapper}>
         <Image
-          source={require('../../assets/searchbar/icon_search.png')} // assets 경로에 맞게 수정
+          source={require('../../../../assets/searchbar/icon_search.png')} // assets 경로에 맞게 수정
           style={styles.searchIcon}
         />
         <TextInput
@@ -20,7 +20,7 @@ const SearchBar = () => {
       {/* 필터 버튼 */}
       <TouchableOpacity style={styles.filterButton}>
         <Image
-          source={require('../../assets/searchbar/icon_filter.png')} // assets 경로에 맞게 수정
+          source={require('../../../../assets/searchbar/icon_filter.png')} // assets 경로에 맞게 수정
           style={styles.filterIcon}
         />
       </TouchableOpacity>

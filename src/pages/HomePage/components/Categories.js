@@ -2,14 +2,14 @@ import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 
 const categoryData = [
-  { id: '1', name: '공연', icon: require('../../assets/category/icon_category_performance.png') },
-  { id: '2', name: '밥집', icon: require('../../assets/category/icon_category_food.png') },
-  { id: '3', name: '카페', icon: require('../../assets/category/icon_category_cafe.png') },
-  { id: '4', name: '전시', icon: require('../../assets/category/icon_category_exhibition.png') },
-  { id: '5', name: '체험', icon: require('../../assets/category/icon_category_activity.png') }, // 추가 카테고리
-  { id: '6', name: '축제', icon: require('../../assets/category/icon_category_festivals.png') },
-  { id: '7', name: '스포츠', icon: require('../../assets/category/icon_category_sports.png')},
-  { id: '8', name: '팝업', icon: require('../../assets/category/icon_category_popup.png') },
+  { id: '1', name: '공연', icon: require('../../../../assets/category/icon_category_performance.png') },
+  { id: '2', name: '밥집', icon: require('../../../../assets/category/icon_category_food.png') },
+  { id: '3', name: '카페', icon: require('../../../../assets/category/icon_category_cafe.png') },
+  { id: '4', name: '전시', icon: require('../../../../assets/category/icon_category_exhibition.png') },
+  { id: '5', name: '체험', icon: require('../../../../assets/category/icon_category_exhibition.png') }, // 이미지 나중에 교체 
+  { id: '6', name: '축제', icon: require('../../../../assets/category/icon_category_exhibition.png') },
+  { id: '7', name: '스포츠', icon: require('../../../../assets/category/icon_category_exhibition.png')},
+  { id: '8', name: '팝업', icon: require('../../../../assets/category/icon_category_exhibition.png') },
 ];
 
 const Categories = () => {

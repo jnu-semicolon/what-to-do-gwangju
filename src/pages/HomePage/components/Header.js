@@ -19,7 +19,7 @@ const Header = () => {
         {/* 알림 아이콘 */}
         <TouchableOpacity style={styles.bellButton}>
           <Image
-            source={require('../../../assets/header/icon_bell.png')} // assets 경로에 맞게 수정
+            source={require('../../../../assets/header/icon_bell.png')} // assets 경로에 맞게 수정
             style={styles.bellIcon}
           />
 
