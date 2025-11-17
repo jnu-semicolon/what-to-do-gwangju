@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../../../assets/banner.png')}
+        source={require('../../../../assets/banner.png')}
         style={styles.imageBackground}
       >
         {/* 페이지네이션 */}
